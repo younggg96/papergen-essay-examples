@@ -37,7 +37,7 @@ export default function PopularTopicsSection() {
       <div className="div-block-57">
         <div class="w-dyn-list grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mx-auto px-4">
           {topics.map((topic, index) => (
-            <div role="list" class="w-dyn-items" key={index}>
+            <div role="list" className="w-dyn-items" key={index}>
               <div role="listitem" className="w-dyn-item">
                 <a href="#" className="div-block-56 w-inline-block">
                   <div className="div-block-59">
