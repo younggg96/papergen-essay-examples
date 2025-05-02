@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // Mock API function to simulate data fetching
 const fetchTopics = () => {
