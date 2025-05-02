@@ -41,6 +41,10 @@ export default function PopularTopicsSection() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  useEffect(() => {
+    handleFetchTopics();
+  }, []);
+
   const handleFetchTopics = async () => {
     setIsLoading(true);
     setError(null);

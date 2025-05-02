@@ -38,6 +38,10 @@ export default function EssayListSection() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  useEffect(() => {
+    handleFetchEssays();
+  }, []);
+
   const handleFetchEssays = async () => {
     setIsLoading(true);
     setError(null);
